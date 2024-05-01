@@ -7,9 +7,8 @@ app = fastapi.FastAPI()
 @app.get("/sample")
 async def index():
     return {
-        "info": "Try /hello/Shivani for parameterized route.",
+        "info": "Try /hello/James for parameterized route.",
     }
-
 
 @app.get("/hello/{name}")
 async def get_name(name: str):
@@ -23,9 +22,9 @@ async def add(int1: int, int2: int):
         "result": int1 + int2,
     }
 
+
 @app.get("/mult/{int1}/{int2}")
 async def mult(int1: int, int2: int):
     return {
         "result": int1 * int2,
     }
-
