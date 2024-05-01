@@ -28,4 +28,3 @@ async def mult(int1: int, int2: int):
     return {
         "result": int1 * int2,
     }
-
