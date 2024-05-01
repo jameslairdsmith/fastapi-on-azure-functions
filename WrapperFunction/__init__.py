@@ -16,3 +16,9 @@ async def get_name(name: str):
     return {
         "name": name,
     }
+
+@app.get("/add/{int1}/{int2}")
+async def add(int1: int, int2: int):
+    return {
+        "result": int1 + int2,
+    }
