@@ -22,3 +22,9 @@ async def add(int1: int, int2: int):
     return {
         "result": int1 + int2,
     }
+
+@app.get("/mult/{int1}/{int2}")
+async def mult(int1: int, int2: int):
+    return {
+        "result": int1 * int2,
+    }
